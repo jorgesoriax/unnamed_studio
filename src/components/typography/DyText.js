@@ -18,7 +18,7 @@ export default function DyText({ variant = "text", type, children, ...props }) {
     },
     types: {
       description: {
-        color: "dySlate.200",
+        color: "slate.200",
       },
     },
   };

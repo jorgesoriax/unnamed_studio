@@ -33,11 +33,11 @@ export default function DyBox({
     },
     variants: {
       solid: {
-        bg: "dySteel.900",
+        bg: "steel.900",
       },
       outline: {
         border: "1px",
-        borderColor: "dyGray.800",
+        borderColor: "gray.800",
         bg: "transparent",
       },
       ghost: {
