@@ -5,7 +5,7 @@ import DyHero from "@/sections/DyHero";
 import DyFeatures from "@/sections/DyFeatures";
 import DyPortfolio from "@/sections/DyPortfolio";
 import DyPricing from "@/sections/DyPricing";
-import DyFAQ from "@/sections/DyFaq";
+import DyFAQ from "@/sections/DyFAQ";
 import DyFooter from "@/components/navigation/DyFooter";
 
 import dataNavBar from "@/data/navbar";
