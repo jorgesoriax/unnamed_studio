@@ -14,17 +14,23 @@ import DyText from "../typography/DyText";
 import { GlobeAmericasIcon } from "@heroicons/react/24/solid";
 import DyLogo from "../mediaAndIcons/DyLogo";
 import DyLink from "./DyLink";
+import { SocialIcon } from "react-social-icons";
 
 export default function DyFooter({ data }) {
   const SocialMedia = () => {
     return (
       <GridItem area="social">
         <HStack spacing={{ base: 4, lg: 6 }} justify="right">
-          <GlobeAmericasIcon width="24px" height="24px" />
-          <GlobeAmericasIcon width="24px" height="24px" />
-          <GlobeAmericasIcon width="24px" height="24px" />
-          <GlobeAmericasIcon width="24px" height="24px" />
-          <GlobeAmericasIcon width="24px" height="24px" />
+          {data.socialMedia.map(({ title, href }) => (
+            <SocialIcon
+              url={href}
+              label={title}
+              target="_blank"
+              bgColor="#FFFFFF"
+              fgColor="#1D1D1D"
+              style={{ width: "45px", height: "45px" }}
+            />
+          ))}
         </HStack>
       </GridItem>
     );
@@ -32,7 +38,7 @@ export default function DyFooter({ data }) {
   const AboutUs = () => {
     return (
       <GridItem area="about">
-        <VStack align="left" spacing={{ base: 2, lg: 4 }}>
+        <VStack align="left" spacing={{ base: 4, lg: 6 }}>
           <DyLogo variant="horizontal" />
           <DyText type="description">{data.aboutUs}</DyText>
         </VStack>
@@ -113,7 +119,7 @@ export default function DyFooter({ data }) {
   const FooterContainer = ({ children }) => {
     return (
       <DyContainer size="full" mb={0}>
-        <DyContainer size="lg" px={{ base: 4, lg: 6 }}>
+        <DyContainer size="lg" px={{ base: 4, lg: 10 }}>
           <Grid
             w="100%"
             templateAreas={{
@@ -146,7 +152,7 @@ export default function DyFooter({ data }) {
       <AboutUs />
       <SocialMedia />
       <Utility />
-      <Secondary />
+      {/* <Secondary /> */}
       <Copyright />
     </FooterContainer>
   );

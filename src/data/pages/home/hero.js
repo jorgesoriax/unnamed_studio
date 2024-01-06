@@ -1,15 +1,15 @@
 const dataHero = {
   textContent: {
     heading: "Creatividad potenciada para elevar tu identidad",
-    body: "Estudio de diseño gráfico que emplea herramientas de Inteligencia Artificial para entregar resultados más rápidos, conservando la coherencia y el propósito.",
+    body: "Dsyner es un Estudio online que ofrece servicios de diseño gráfico personalizado y con propósito.",
   },
   actions: {
     primary: {
-      title: "¡Hablemos!",
+      title: "Precios",
       to: "/",
     },
     secondary: {
-      title: "Ver portafolio",
+      title: "Portafolio",
       to: "portfolio",
     },
   },

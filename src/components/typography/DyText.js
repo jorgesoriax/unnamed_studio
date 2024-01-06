@@ -14,6 +14,7 @@ export default function DyText({ variant = "text", type, children, ...props }) {
       },
       label: {
         fontSize: "sm",
+        fontWeight: "light",
       },
     },
     types: {

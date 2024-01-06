@@ -1,8 +1,15 @@
+import { FireIcon } from "@heroicons/react/24/solid";
+
 const dataPortfolio = {
   header: {
     title: "Un vistazo de nuestro trabajo",
     description:
       "Potencia tus emprendimientos y proyectos con diseños personalizados a tu medida.",
+  },
+  actions: {
+    title: "Ver más trabajos",
+    icon: <FireIcon width="24px" height="24px" />,
+    href: "https://dribbble.com/jorgesoriax",
   },
   projects: [
     {

@@ -3,13 +3,21 @@ const dataFooter = {
     "Somos un estudio de diseño gráfico que emplea herramientas de Inteligencia Artificial para entregar servicios más rápidos y preciosos sin dejar de lado la calidad y el propósito.",
   socialMedia: [
     {
-      title: "Visita nuestro portafolio en Behance",
+      title: "Visita nuestro Behance",
       href: "https://www.behance.net/dsynercrea",
     },
+    {
+      title: "",
+      href: ""
+    },
+    {
+      title: "",
+      href: ""
+    }
   ],
   utility: [
     {
-      title: "contact",
+      title: "Contacto",
       items: [
         {
           title: "contacto@dsyner.com.mx",
@@ -20,37 +28,24 @@ const dataFooter = {
           href: "https://wa.me/8126407713",
         },
       ],
-    },
-    {
-      title: "HOLA",
-      items: [
-        {
-          title: "X",
-          href: "mailto:contacto@dsyner.com.mx",
-        },
-        {
-          title: "X",
-          href: "https://wa.me/8126407713",
-        },
-      ],
-    },
+    }
   ],
   secondary: [
     {
       title: "Póliticas",
       items: [
         {
-          title: "A SAMPLE",
-          href: "asd",
+          title: "Por definir",
+          href: "temp",
         },
         {
-          title: "B SAMPLE",
-          href: "das",
+          title: "Por definir",
+          href: "temp",
         },
       ],
     },
   ],
-  copyright: "Desarrollado por dsyner",
+  copyright: "Desarrollado por Dsyner.",
 };
 
 export default dataFooter;

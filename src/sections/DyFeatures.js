@@ -1,28 +1,24 @@
 import DyContainer from "@/components/layout/DyContainer";
-import DyCard from "@/components/dataDisplay/DyCard";
-import { Grid, GridItem, useBreakpointValue } from "@chakra-ui/react";
-import { BoltIcon } from "@heroicons/react/24/solid";
+import DyCard from "@/components/dataDisplay/DyCard_old";
+import { Grid, GridItem } from "@chakra-ui/react";
 
 export default function DyFeatures({ data }) {
-  const cardDirection = useBreakpointValue({
-    base: "vertical",
-    lg: "horizontal",
-  });
-
   return (
-    <DyContainer id="features" size="md">
+    <DyContainer id="features" size="sm">
       <Grid
         w="100%"
         templateColumns={{ base: "auto", lg: "repeat(2, 1fr)" }}
-        gap={{ base: 14, lg: 16 }}
+        gap={{ base: 4, lg: 6 }}
       >
-        {data.features.map(({ title, description }, i) => (
+        {data.features.map(({ title, description, icon }, i) => (
           <GridItem key={i}>
+            {/* // TODO Reemplazar por nuevo DyCard */}
             <DyCard
-              variant="ghost"
-              icon={<BoltIcon width="24px" height="24px" />}
+              h="100%"
+              variant="outline"
+              icon={icon}
               heading={title}
-              direction={cardDirection}
+              direction="vertical"
               textAlign="center"
             >
               {description}

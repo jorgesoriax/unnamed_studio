@@ -10,7 +10,13 @@ import { Link, useBreakpointValue } from "@chakra-ui/react";
  * @param {boolean} props.isExternal - Indica si el enlace es externo.
  * @param {object} props.children - Contenido del componente.
  */
-export default function DyLink({ scrollTo, href, isExternal, children }) {
+export default function DyLink({
+  scrollTo,
+  href,
+  isExternal,
+  children,
+  ...props
+}) {
   // Determina cómo se renderizará el botón en función de su destino.
   // - Si es un enlace interno, se establece como "isInternal".
   // - Si es un enlace externo, se establece como "isExternal".
@@ -29,13 +35,13 @@ export default function DyLink({ scrollTo, href, isExternal, children }) {
   switch (linkType) {
     case "isInternal":
       return (
-        <Link as={NextLink} href={href}>
+        <Link as={NextLink} href={href} {...props}>
           {children}
         </Link>
       );
     case "isExternal":
       return (
-        <Link as={NextLink} href={href} isExternal>
+        <Link as={NextLink} href={href} isExternal {...props}>
           {children}
         </Link>
       );
@@ -48,6 +54,7 @@ export default function DyLink({ scrollTo, href, isExternal, children }) {
           smooth={true}
           duration={500}
           offset={setOffset}
+          {...props}
         >
           {children}
         </ScrollLink>

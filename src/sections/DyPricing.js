@@ -1,10 +1,28 @@
-import { Grid, GridItem, Stack, useBreakpointValue } from "@chakra-ui/react";
+import {
+  Box,
+  Grid,
+  GridItem,
+  HStack,
+  List,
+  ListItem,
+  Stack,
+  useBreakpointValue,
+} from "@chakra-ui/react";
 import DyContainer from "@/components/layout/DyContainer";
 import DyBox from "@/components/layout/DyBox";
 import DySectionHeader from "@/components/typography/DySectionHeader";
-import DyCard from "@/components/dataDisplay/DyCard";
+// import DyCard from "@/components/dataDisplay/DyCard_old";
 import DyButton from "@/components/forms/DyButton";
-import { BookmarkIcon } from "@heroicons/react/24/solid";
+import {
+  BookmarkIcon,
+  CheckCircleIcon,
+  ExclamationCircleIcon,
+  InformationCircleIcon,
+} from "@heroicons/react/24/solid";
+import DyText from "@/components/typography/DyText";
+import DyCard from "@/components/dataDisplay/DyCard";
+import DyIcon from "@/components/mediaAndIcons/DyIcon";
+import DyLink from "@/components/navigation/DyLink";
 
 export default function DyPricing({ data }) {
   const cardDirection = useBreakpointValue({
@@ -21,41 +39,42 @@ export default function DyPricing({ data }) {
         </DySectionHeader>
 
         <Grid
-          templateColumns={{ base: "auto", lg: "repeat(2, 1fr)" }}
+          templateColumns={{ base: "auto", lg: "repeat(3, 1fr)" }}
           gap={{ base: 4, lg: 6 }}
         >
-          {data.services.map(({ title, description, price }, i) => (
-            <GridItem key={i}>
-              <DyCard
-                heading={title}
-                tag={price}
-                cursor="pointer"
-                _hover={{ bg: "violet.500" }}
-              >
-                {description}
-              </DyCard>
-            </GridItem>
-          ))}
+          {data.services.map(
+            ({ heading, description, price, features, link }, i) => (
+              <GridItem key={i}>
+                <DyLink
+                  href={link}
+                  isExternal
+                  _hover={{ textDecoration: "none" }}
+                >
+                  <DyCard
+                    h="100%"
+                    heading={heading}
+                    tag={price}
+                    description={description}
+                    features={features}
+                    cursor="pointer"
+                    _hover={{ bg: "violet.500" }}
+                  />
+                </DyLink>
+              </GridItem>
+            )
+          )}
         </Grid>
 
         <Stack
           direction={{ base: "column", lg: "row" }}
           spacing={{ base: 8, lg: 10 }}
         >
-          <DyCard
-            direction={cardDirection}
-            variant="ghost"
-            icon={<BookmarkIcon width="24px" height="24px" />}
-            textAlign="center"
-          >
-            Si no encuentras lo que buscas, por favor, escríbenos y con gusto te
+          <DyIcon icon={<InformationCircleIcon width="24px" height="24px" />} />
+          <DyText type="description">
+            Si no encuentras lo que buscas, por favor escríbenos y con gusto te
             ofreceremos soluciones personalizadas.
-          </DyCard>
-          <DyButton
-            colorScheme="gray"
-            color="steel.900"
-            fontWeight="semibold"
-          >
+          </DyText>
+          <DyButton colorScheme="gray" color="steel.900" fontWeight="semibold">
             Contáctanos
           </DyButton>
         </Stack>

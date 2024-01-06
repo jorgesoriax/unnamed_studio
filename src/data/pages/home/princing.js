@@ -6,13 +6,14 @@ const dataPricing = {
   },
   services: [
     {
-      title: "Logotipo básico",
+      heading: "Logo básico",
       description: "Dale una identidad a tu marca.",
       features: ["Logo adaptable", "Archivos originales"],
       price: "Desde $599 MXN",
+      link: "temp"
     },
     {
-      title: "Logotipo estándar",
+      heading: "Logo estándar",
       description: "Algo más que una identidad.",
       features: [
         "Logo adaptable",
@@ -23,21 +24,24 @@ const dataPricing = {
         "Archivos originales",
       ],
       price: "Desde $1,299 MXN",
+      link: "temp"
     },
     {
-      title: "Tarjeta de presentación",
+      heading: "Business",
       description: "Una gran primera impresión.",
       features: ["Optimizado para impresión", "Archivos originales"],
       price: "Desde $799 MXN",
+      link: "temp"
     },
     {
-      title: "Brochure",
+      heading: "Brochure",
       description: "Da a conocer tus servicios profesionales.",
       features: ["Optimizado para impresión", "Archivos originales"],
       price: "Desde $889 MXN",
+      link: "temp"
     },
     {
-      title: "Landing page",
+      heading: "Landing page",
       description: "Un lugar donde darte a conocer.",
       features: [
         "Wordpress + Divi",
@@ -46,6 +50,7 @@ const dataPricing = {
         "Archivos originales",
       ],
       price: "Desde $1,499 MXN",
+      link: "temp"
     },
   ],
 };
