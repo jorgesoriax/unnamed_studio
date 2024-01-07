@@ -13,6 +13,10 @@ export default function DyHero({ data }) {
         lg: "calc(100vh - 107.98px)",
       }}
       maxH="800px"
+      bgImage="url('/static/images/hero/bgherotest.png')"
+      bgPosition="center"
+      bgSize="cover"
+      bgRepeat="no-repeat"
     >
       <DyContainer size="sm" mb={0}>
         <DyHeading variant="display" textAlign="center">
@@ -26,11 +30,7 @@ export default function DyHero({ data }) {
           spacing={{ base: 4, lg: 6 }}
           mt={{ base: 14, lg: 16 }}
         >
-          <DyButton
-            colorScheme="lime"
-            color="steel.900"
-            fontWeight="semibold"
-          >
+          <DyButton colorScheme="lime" color="steel.900" fontWeight="semibold">
             {data.actions.primary.title}
           </DyButton>
           <DyButton variant="ghost" scrollTo={data.actions.secondary.to}>

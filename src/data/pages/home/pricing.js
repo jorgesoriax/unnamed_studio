@@ -27,7 +27,7 @@ const dataPricing = {
       link: "temp"
     },
     {
-      heading: "Business",
+      heading: "Business card",
       description: "Una gran primera impresión.",
       features: ["Optimizado para impresión", "Archivos originales"],
       price: "Desde $799 MXN",

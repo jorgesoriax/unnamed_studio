@@ -12,7 +12,7 @@ import dataNavBar from "@/data/navbar";
 import dataHero from "@/data/pages/home/hero";
 import dataFeatures from "@/data/pages/home/features";
 import dataPortfolio from "@/data/pages/home/portfolio";
-import dataPricing from "@/data/pages/home/princing";
+import dataPricing from "@/data/pages/home/pricing";
 import dataFAQ from "@/data/pages/home/faq";
 import dataFooter from "@/data/footer";
 

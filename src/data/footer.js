@@ -5,14 +5,6 @@ const dataFooter = {
     {
       title: "Visita nuestro Behance",
       href: "https://www.behance.net/dsynercrea",
-    },
-    {
-      title: "",
-      href: ""
-    },
-    {
-      title: "",
-      href: ""
     }
   ],
   utility: [

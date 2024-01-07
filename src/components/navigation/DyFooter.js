@@ -21,8 +21,9 @@ export default function DyFooter({ data }) {
     return (
       <GridItem area="social">
         <HStack spacing={{ base: 4, lg: 6 }} justify="right">
-          {data.socialMedia.map(({ title, href }) => (
+          {data.socialMedia.map(({ title, href }, i) => (
             <SocialIcon
+              key={i}
               url={href}
               label={title}
               target="_blank"

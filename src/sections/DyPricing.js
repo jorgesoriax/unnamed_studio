@@ -45,21 +45,21 @@ export default function DyPricing({ data }) {
           {data.services.map(
             ({ heading, description, price, features, link }, i) => (
               <GridItem key={i}>
-                <DyLink
+                {/* <DyLink
                   href={link}
                   isExternal
                   _hover={{ textDecoration: "none" }}
-                >
+                > */}
                   <DyCard
                     h="100%"
                     heading={heading}
                     tag={price}
                     description={description}
                     features={features}
-                    cursor="pointer"
-                    _hover={{ bg: "violet.500" }}
+                    // cursor="pointer"
+                    // _hover={{ bg: "violet.500" }}
                   />
-                </DyLink>
+                {/* </DyLink> */}
               </GridItem>
             )
           )}

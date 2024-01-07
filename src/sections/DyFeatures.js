@@ -10,7 +10,7 @@ export default function DyFeatures({ data }) {
         templateColumns={{ base: "auto", lg: "repeat(2, 1fr)" }}
         gap={{ base: 4, lg: 6 }}
       >
-        {data.features.map(({ title, description, icon }, i) => (
+        {data.features.map(({ title, description, bg, icon }, i) => (
           <GridItem key={i}>
             {/* // TODO Reemplazar por nuevo DyCard */}
             <DyCard
@@ -20,6 +20,10 @@ export default function DyFeatures({ data }) {
               heading={title}
               direction="vertical"
               textAlign="center"
+              bgImage={`url('${bg}')`}
+              bgPosition="center"
+              bgSize="cover"
+              bgRepeat="no-repeat"
             >
               {description}
             </DyCard>
