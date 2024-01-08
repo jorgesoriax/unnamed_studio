@@ -4,11 +4,11 @@ const dataFAQ = {
     description: "Aquí tienes algunas de las dudas que todos hacen.",
   },
   questions: [
-    {
-      question: "¿Cómo trabajan con la IA?",
-      answer:
-        "Empleamos Inteligencia Artificial para optimizar nuestro flujo de trabajo y acelerar la entrega de resultados. Su implementación se centra, principalmente, en el procesamiento de los formularios que recibimos, a fin de generar comentarios y recomendaciones de diseño basados en texto o imágenes.",
-    },
+    // {
+    //   question: "¿Cómo trabajan con la IA?",
+    //   answer:
+    //     "Empleamos Inteligencia Artificial para optimizar nuestro flujo de trabajo y acelerar la entrega de resultados. Su implementación se centra, principalmente, en el procesamiento de los formularios que recibimos, a fin de generar comentarios y recomendaciones de diseño basados en texto o imágenes.",
+    // },
     {
       question: "¿Cómo funciona el proceso de diseño?",
       answer:
@@ -22,7 +22,7 @@ const dataFAQ = {
     {
       question: "¿Qué sucede si el diseño final no es de mi agrado?",
       answer:
-        "Si no quedas satisfecho Fo satisfecha con el resultado, cuentas con una garantía de satisfacción que te permite solicitar un reembolso del 100%.",
+        "Si no quedas satisfecho o satisfecha con el resultado puedes solicitar un reembolso del 100%.",
     },
   ],
 };

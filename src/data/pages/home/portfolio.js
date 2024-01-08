@@ -1,4 +1,4 @@
-import { FireIcon } from "@heroicons/react/24/solid";
+import { SparklesIcon } from "@heroicons/react/24/solid";
 
 const dataPortfolio = {
   header: {
@@ -7,9 +7,9 @@ const dataPortfolio = {
       "Potencia tus emprendimientos y proyectos con diseños personalizados a tu medida.",
   },
   actions: {
-    title: "Ver más trabajos",
-    icon: <FireIcon width="24px" height="24px" />,
-    href: "https://dribbble.com/jorgesoriax",
+    title: "Ver nuestro Behance",
+    icon: <SparklesIcon width="24px" height="24px" />,
+    href: "https://www.behance.net/dsyner_studio",
   },
   projects: [
     {

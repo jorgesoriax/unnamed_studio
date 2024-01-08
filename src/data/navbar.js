@@ -13,14 +13,14 @@ const dataNavBar = {
       to: "services",
     },
     {
-      title: "FAQ",
+      title: "Dudas",
       to: "faq",
     },
   ],
   cta: [
     {
       title: "Obten tu diseño",
-      to: "pricing",
+      to: "services",
     },
   ],
 };

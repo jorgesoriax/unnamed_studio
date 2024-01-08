@@ -33,9 +33,8 @@ export default function DyPricing({ data }) {
   return (
     <DyContainer id="services">
       <DyBox variant="outline" size="lg">
-        <DySectionHeader heading="Servicios">
-          Lorem ipsum dolor sit amet consectetur. Quis vivamus in aenean
-          pulvinar.
+        <DySectionHeader heading={data.header.title}>
+          {data.header.description}
         </DySectionHeader>
 
         <Grid
@@ -50,15 +49,15 @@ export default function DyPricing({ data }) {
                   isExternal
                   _hover={{ textDecoration: "none" }}
                 > */}
-                  <DyCard
-                    h="100%"
-                    heading={heading}
-                    tag={price}
-                    description={description}
-                    features={features}
-                    // cursor="pointer"
-                    // _hover={{ bg: "violet.500" }}
-                  />
+                <DyCard
+                  h="100%"
+                  heading={heading}
+                  tag={price}
+                  description={description}
+                  features={features}
+                  // cursor="pointer"
+                  // _hover={{ bg: "violet.500" }}
+                />
                 {/* </DyLink> */}
               </GridItem>
             )
@@ -70,12 +69,15 @@ export default function DyPricing({ data }) {
           spacing={{ base: 8, lg: 10 }}
         >
           <DyIcon icon={<InformationCircleIcon width="24px" height="24px" />} />
-          <DyText type="description">
-            Si no encuentras lo que buscas, por favor escríbenos y con gusto te
-            ofreceremos soluciones personalizadas.
-          </DyText>
-          <DyButton colorScheme="gray" color="steel.900" fontWeight="semibold">
-            Contáctanos
+          <DyText type="description">{data.tip.description}</DyText>
+          <DyButton
+            colorScheme="gray"
+            color="steel.900"
+            fontWeight="semibold"
+            href={data.tip.href}
+            isExternal
+          >
+            {data.tip.action}
           </DyButton>
         </Stack>
       </DyBox>

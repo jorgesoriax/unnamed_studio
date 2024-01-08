@@ -9,11 +9,11 @@ export default function DyHero({ data }) {
     <DyContainer
       size="xl"
       h={{
-        base: "calc(100dvh - 92px)",
-        lg: "calc(100vh - 107.98px)",
+        base: "calc(100dvh - 92px - 50px)",
+        lg: "calc(100vh - 107.98px - 50px)",
       }}
       maxH="800px"
-      bgImage="url('/static/images/hero/bgherotest.png')"
+      bgImage={`url('${data.heroImage}')`}
       bgPosition="center"
       bgSize="cover"
       bgRepeat="no-repeat"
@@ -30,7 +30,12 @@ export default function DyHero({ data }) {
           spacing={{ base: 4, lg: 6 }}
           mt={{ base: 14, lg: 16 }}
         >
-          <DyButton colorScheme="lime" color="steel.900" fontWeight="semibold">
+          <DyButton
+            colorScheme="lime"
+            color="steel.900"
+            fontWeight="semibold"
+            scrollTo={data.actions.primary.to}
+          >
             {data.actions.primary.title}
           </DyButton>
           <DyButton variant="ghost" scrollTo={data.actions.secondary.to}>

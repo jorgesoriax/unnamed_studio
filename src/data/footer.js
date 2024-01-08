@@ -4,7 +4,7 @@ const dataFooter = {
   socialMedia: [
     {
       title: "Visita nuestro Behance",
-      href: "https://www.behance.net/dsynercrea",
+      href: "https://www.behance.net/dsyner_studio",
     }
   ],
   utility: [
@@ -37,7 +37,7 @@ const dataFooter = {
       ],
     },
   ],
-  copyright: "Desarrollado por Dsyner.",
+  copyright: "🖐 Desarrollado por dsyner.",
 };
 
 export default dataFooter;
