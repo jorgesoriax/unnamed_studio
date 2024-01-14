@@ -1,0 +1,5 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^dsyner.com.mx$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^www.dsyner.com.mx$
+RewriteCond %{REQUEST_URI} !out/
+RewriteRule (.*) /out/$1 [L]
