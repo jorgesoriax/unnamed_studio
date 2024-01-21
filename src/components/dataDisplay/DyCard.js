@@ -35,7 +35,7 @@ export default function DyCard({
       <GridItem>
         <VStack  align="left" spacing={{ base: 1.5, lg: 2 }} >
           <DyHeading variant="title">{heading}</DyHeading>
-          <DyText type="description">{description}</DyText>
+          {/* <DyText type="description">{description}</DyText> */}
         </VStack>
       </GridItem>
     );

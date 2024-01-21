@@ -1,7 +1,7 @@
 const dataFAQ = {
   header: {
-    title: "Respuestas a preguntas comunes",
-    description: "Aquí tienes algunas de las dudas que todos hacen.",
+    title: "Preguntas comunes",
+    description: "Todos se han preguntado...",
   },
   questions: [
     // {
@@ -12,12 +12,12 @@ const dataFAQ = {
     {
       question: "¿Cómo funciona el proceso de diseño?",
       answer:
-        "Una vez recibimos tu formulario iniciamos nuestro proceso de diseño. Comienza con dibujar bocetos a mano para crear distintas propuestas. Después, seleccionamos la mejor, la vectorizamos y finalmente, desarrollamos la documentación necesaria.",
+        "Nuestro proceso de diseño se basa en tus necesidades, recopiladas durante una primera reunión contigo. Creamos algunos bocetos, los evaluamos junto contigo y una vez seleccionado el mejor, preparamos la documentación necesaria. Por último, envolvemos todo esto en un archivo que puedes descargar con facilidad.",
     },
     {
-      question: "¿Que archivos se me entrega al finalizar el servicio?",
+      question: "¿Qué me entregan al finalizar el servicio?",
       answer:
-        "Podemos exportar los diseños en el formato que desees. Normalmente te entregamos JPG, PNG, SVG, PDF y el archivo editable para Illustrator o Canva. Estos formatos pueden variar según el servicio que deseés.",
+        "Te entregamos imágenes en formato JPG, PNG, SVG, documentos PDF y los archivos editables para Illustrator o Canva. Los entregables varian según el servicio que adquieras.",
     },
     {
       question: "¿Qué sucede si el diseño final no es de mi agrado?",

@@ -14,6 +14,7 @@ import DySectionHeader from "@/components/typography/DySectionHeader";
 // import DyCard from "@/components/dataDisplay/DyCard_old";
 import DyButton from "@/components/forms/DyButton";
 import {
+  ArrowRightCircleIcon,
   BookmarkIcon,
   CheckCircleIcon,
   ExclamationCircleIcon,
@@ -25,11 +26,6 @@ import DyIcon from "@/components/mediaAndIcons/DyIcon";
 import DyLink from "@/components/navigation/DyLink";
 
 export default function DyPricing({ data }) {
-  const cardDirection = useBreakpointValue({
-    base: "vertical",
-    lg: "horizontal",
-  });
-
   return (
     <DyContainer id="services">
       <DyBox variant="outline" size="lg">
@@ -76,6 +72,7 @@ export default function DyPricing({ data }) {
             fontWeight="semibold"
             href={data.tip.href}
             isExternal
+            icon={<ArrowRightCircleIcon width="24px" height="24px"/>}
           >
             {data.tip.action}
           </DyButton>

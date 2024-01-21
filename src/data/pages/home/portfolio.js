@@ -7,7 +7,7 @@ const dataPortfolio = {
       "Potencia tus emprendimientos y proyectos con diseños personalizados a tu medida.",
   },
   actions: {
-    title: "Ver nuestro Behance",
+    title: "Mira nuestro Behance",
     icon: <SparklesIcon width="24px" height="24px" />,
     href: "https://www.behance.net/dsyner_studio",
   },

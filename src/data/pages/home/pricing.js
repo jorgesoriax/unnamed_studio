@@ -2,11 +2,11 @@ const dataPricing = {
   header: {
     title: "Elige el servicio ideal para ti",
     description:
-      "Todos nuestros servicios cuentan con garantia de satisfacción y revisiones ilimitadas.",
+      "Todos nuestros servicios cuentan con garantía de satisfacción y revisiones ilimitadas.",
   },
   tip: {
     description:
-      "Si no encuentras lo que buscas, por favor escríbenos y con gusto te ofreceremos soluciones personalizadas.",
+      "Si no encuentras lo que buscas, por favor escríbenos y con gusto encontraremos soluciones personalizadas para ti.",
     action: "Contáctanos",
     href: "https://wa.me/8126407713"
   },
@@ -14,7 +14,7 @@ const dataPricing = {
     {
       heading: "Logo básico",
       description: "Dale una identidad a tu marca.",
-      features: ["Logo adaptable", "Archivos originales"],
+      features: ["Logo adaptable (hasta 3 versiones)", "Archivos originales"],
       price: "Desde $599 MXN",
       link: "temp",
     },

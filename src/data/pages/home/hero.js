@@ -1,7 +1,7 @@
 const dataHero = {
   textContent: {
     heading: "Creatividad potenciada para elevar tu identidad",
-    body: "Dsyner es un estudio online que ofrece servicios de diseño gráfico personalizado y con propósito.",
+    body: "Dsyner es un estudio de diseño gráfico en línea que utiliza IA para optimizar la entrega de sus servicios conservando la calidad y el proposito.",
   },
   actions: {
     primary: {

@@ -14,7 +14,7 @@ import {
   useBreakpointValue,
   useDisclosure,
 } from "@chakra-ui/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
+import { Bars3Icon, BoltIcon, XMarkIcon } from "@heroicons/react/24/solid";
 import DyContainer from "../layout/DyContainer";
 import DyButton from "../forms/DyButton";
 import DyLogo from "../mediaAndIcons/DyLogo";
@@ -86,7 +86,7 @@ export default function DyNavbar({ data }) {
       <HStack>
         <Show above="lg">
           {data.cta.map(({ title, to }, i) => (
-            <DyButton key={i} scrollTo={to}>
+            <DyButton key={i} scrollTo={to} icon={<BoltIcon width="24px" height="24px"/>}>
               {title}
             </DyButton>
           ))}

@@ -8,7 +8,8 @@ export default function DyTag({ children, ...props }) {
       py: { base: 1.5, lg: 2 },
       colorScheme: "dyGray",
       minW: "fit-content",
-      maxW: "fit-content"
+      maxW: "fit-content",
+      fontWeight: "light"
     },
   };
 

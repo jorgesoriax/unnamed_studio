@@ -1,6 +1,6 @@
 const dataFooter = {
   aboutUs:
-    "Somos un estudio de diseño gráfico que emplea herramientas de Inteligencia Artificial para entregar servicios más rápidos y preciosos sin dejar de lado la calidad y el propósito.",
+    "Dsyner es un estudio de diseño gráfico en línea que utiliza IA para optimizar la entrega de sus servicios conservando la calidad y el proposito.",
   socialMedia: [
     {
       title: "Visita nuestro Behance",

@@ -1,4 +1,4 @@
-import { BoltIcon } from "@heroicons/react/24/solid";
+import { BoltIcon, CheckBadgeIcon, EyeIcon, MagnifyingGlassCircleIcon, ShieldCheckIcon } from "@heroicons/react/24/solid";
 
 const dataFeatures = {
   header: {
@@ -12,7 +12,7 @@ const dataFeatures = {
       description:
         "Si tu diseño no cumple con tus necesidades, puedes solicitar un reembolso del 100%.",
       bg: "./static/images/features/feature_bg_01.png",
-      icon: <BoltIcon width="24px" height="24px" />,
+      icon: <ShieldCheckIcon width="24px" height="24px" />,
     },
     // {
     //   title: "Diseño con propósito",
@@ -33,7 +33,7 @@ const dataFeatures = {
       description:
         "Creamos junto a ti para asegurarnos de que el resultado final cumpla con tus expectativas.",
       bg: "./static/images/features/feature_bg_04.png",
-      icon: <BoltIcon width="24px" height="24px" />,
+      icon: <EyeIcon width="24px" height="24px" />,
     },
   ],
 };
